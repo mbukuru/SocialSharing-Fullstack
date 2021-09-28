@@ -105,6 +105,11 @@ export const downvotePost = async (req, res) => {
   }
 
   const post = await Post.findById(id);
+
+  if(post.upvotes === 0){
+    return post.upvotes
+ }
+
   const updatedPost = await Post.findByIdAndUpdate(
     id,
     { upvotes: post.upvotes - 1 },
