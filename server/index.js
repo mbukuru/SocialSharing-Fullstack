@@ -15,7 +15,7 @@ app.use(cors());
 app.use("/posts", postRoutes);
 
 app.get("/", (req, res) => {
-    res.send("Hello World");
+    res.send("Welcome to the Social Sharing API");
 })
 
 const PORT = process.env.PORT || 5000;

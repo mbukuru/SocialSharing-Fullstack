@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "http://localhost:5000/posts"; // change this URL once you deploy the backend to Heroku
+const url = "https://socialsharing-fullstack.herokuapp.com/";
 
 export const fetchPosts = () => axios.get(url);
 export const createPost = (newPost) => axios.post(url, newPost);
