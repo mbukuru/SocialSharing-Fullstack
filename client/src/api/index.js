@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "https://socialsharing-fullstack.herokuapp.com/";
+const url = "https://socialsharing-fullstack.herokuapp.com/posts";
 
 export const fetchPosts = () => axios.get(url);
 export const createPost = (newPost) => axios.post(url, newPost);
